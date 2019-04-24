@@ -57,8 +57,6 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 /* INDEX */
 
 .container {
@@ -119,6 +117,10 @@ h1 {
 	text-align: center;
 }
 
+section.right img {
+	width: 100%;
+}
+
 section.top, section.bottom {
 	padding: 40px 0;
 }
@@ -127,13 +129,20 @@ section.top, section.bottom {
 	display: flex;
 }
 
+section.bottom {
+	border-bottom: 1px solid #000;
+}
+
+.middle-img {
+	width: 100%;
+}
+
 section.bottom .middle {
 	padding: 0 20px;
 }
 
 footer {
 	padding: 40px 0 20px 0;
-	border-top: 1px solid #000;
 }
 
 .copyright {
@@ -166,4 +175,76 @@ article p {
 
 .page section.bottom {
 	border-top: 1px solid #000;
+}
+
+/* SERVICES */
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+.inner-hero {
+	padding: 0 0 40px 0;
+	margin: 0 0 40px 0;
+	border-bottom: 1px solid #000;
+}
+
+.inner-hero img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.services {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid #000;
+}
+
+.services article {
+	width: 47.5%;
+	background-color: #f4f3f4;
+	border: 1px solid #000;
+	padding: 20px;
+	margin: 0 0 35px 0;
+}
+
+.services article p {
+	margin: 0 0 20px 0;
+}
+
+.services a {
+	border: 1px solid #000;
+	padding: 5px 25px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+}
+
+footer.facts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+footer.facts article {
+	width: 45.7%;
+}
+
+footer.facts ul {
+	padding: 0 0 0 15px;
+	list-style-type: disc;
+	line-height: 20px;
+}
+
+.services-info-img {
+	width: 47.5%;
 }
