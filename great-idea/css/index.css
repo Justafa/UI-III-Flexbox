@@ -252,7 +252,7 @@ footer.facts ul {
 
 /* Media Queries */
 
-@media (max-width: 769px) {
+@media (max-width: 876px) {
 	.container {
 		min-width: 320px;
 	}
